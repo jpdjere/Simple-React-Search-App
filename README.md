@@ -1,4 +1,4 @@
-# GetYourGuide Tour search app
+# Simple Tour search app
 
 ## Decisions taken
 

@@ -1,5 +1,5 @@
 {
-  "name": "getyourguide",
+  "name": "Simple search app",
   "version": "1.0.0",
   "description": "A simple search app",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpdjere/GetYourGuide-Search-App.git"
+    "url": "git+https://github.com/jpdjere/Simple-React-Search-App.git"
   },
   "author": "Juan Pablo Djeredjian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jpdjere/GetYourGuide-Search-App/issues"
+    "url": "https://github.com/jpdjere/Simple-React-Search-App.git/issues"
   },
-  "homepage": "https://github.com/jpdjere/GetYourGuide-Search-App#readme",
+  "homepage": "https://github.com/jpdjere/Simple-React-Search-App.git#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
