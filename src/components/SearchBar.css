@@ -1,0 +1,38 @@
+.search-bar {
+  margin-top:30px;
+}
+
+.search-bar__container {
+
+  width:100%;
+}
+
+.textField{
+  width:70%;
+  padding:40px 10px 20px 20px;;
+  display:inline-block;
+}
+.searchButton{
+  width:30%;
+  padding:0 5%;
+  display:inline-block;
+}
+
+.errorMessage {
+  color:red;
+  text-align: center;
+  padding:0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .textField{
+    width:100%;
+    padding:40px 10px 20px 20px;;
+    display:block;
+  }
+  .searchButton{
+    width:100%;
+    padding:0 5%;
+    display:block;
+  }
+}

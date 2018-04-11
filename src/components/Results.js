@@ -6,22 +6,12 @@ import RaisedButton from 'material-ui/RaisedButton';
 // import ShoppingCart from 'material-ui/svg-icons/action/shopping-cart';
 import ActionFlightTakeoff from 'material-ui/svg-icons/action/flight-takeoff';
 
-const styles = {
-  wrapper:{
-
-  }
-
-}
+import css from "./Results.css"
 
 
 class Results extends Component{
 
-  showCardTitle(tour){
-    if(tour.isSpecialOffer){
-      return <CardTitle title={tour.title} subtitle="SPECIAL OFFER" />
-    }
-    return <CardTitle title={tour.title}/>
-  }
+
 
   showResults(){
     if(this.props.results){
@@ -47,8 +37,13 @@ class Results extends Component{
         filtered.map((tour) => {
           return (
 
-            <Card style={{padding:"10px"}}>
-              {this.showCardTitle(tour)}
+            <Card style={{padding:"10px",position:"relative"}}>
+              <CardTitle title={tour.title}/>
+              {
+                tour.isSpecialOffer ?
+                <p className={css.specialOffer}>SPECIAL OFFER</p>
+                : ""
+              }
               <CardText>
                 <h3>
                   Price: €{tour.price}

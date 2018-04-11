@@ -25,8 +25,8 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
-              camelCase: true,
+              // modules: true,
+              camelCase: false,
               sourceMap: true
             }
           }

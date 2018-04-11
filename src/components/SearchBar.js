@@ -5,28 +5,7 @@ import {fetchResults} from "../actions"
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 import Slider from "./Slider";
-
-const styles = {
-  wrapper: {
-    width: '100%',
-    display: "flex",
-    flexDirection:"row",
-    justifyContent:"flex-start",
-    flexWrap: "wrap",
-    // margin: "0 auto",
-    // padding:"100px"
-    margin:"10px 0"
-
-  },
-  textFieldWrapper: {
-    flex: "5 1"
-  },
-  buttonWrapper: {
-    flex: "1 1",
-    alignSelf: "center",
-    padding: "20px"
-  },
-};
+import css from "./SearchBar.css"
 
 class SearchBar extends Component{
   constructor(){
@@ -63,18 +42,18 @@ class SearchBar extends Component{
 
   render(){
     return (
-      <div>
+      <div className={css.searchBar}>
 
-        <div style={styles.wrapper}>
-          <div style={styles.textFieldWrapper}>
+        <div className={css.searchBarContainer}>
+          <div className={css.textField}>
             <TextField
-              floatingLabelText="Search for your travel package!"
+              floatingLabelText="Search for your travel tour!"
               fullWidth={true}
               value={this.state.search}
               onChange={this.handleTextChange}
             />
           </div>
-          <div style={styles.buttonWrapper}>
+          <div className={css.searchButton}>
             <RaisedButton label="Search!"
               primary={true}
               style={{margin:"0px"}}
@@ -86,7 +65,7 @@ class SearchBar extends Component{
           </div>
 
         </div>
-        {this.state.searchError && <h3 style={{color:"red"}}>{this.state.searchError}</h3>}
+        {this.state.searchError && <h3 className={css.errorMessage}>{this.state.searchError}</h3>}
       </div>
     )
   }

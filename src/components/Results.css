@@ -1,0 +1,26 @@
+.specialOffer {
+  color:red;
+  position: absolute;
+  right: 0px;
+  transform: rotate(0.125turn);
+  padding: 15px;
+  background: deepskyblue;
+
+}
+
+.specialOffer::before {
+  content:"";
+  background: deepskyblue;
+  padding: 15px;
+  position:relative;
+  top:5px;
+  left:-30px;
+}
+.specialOffer::after {
+  content:"";
+  background: deepskyblue;
+  padding: 15px;
+  position:relative;
+  top:5px;
+  right:-30px;
+}
